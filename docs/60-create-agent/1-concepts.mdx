@@ -1,0 +1,15 @@
+# 📘 Concepts
+
+Here is a quick overview of concepts that you will come across in this section of the lab:
+
+In this lab, we will use LangGraph by LangChain to orchestrate the MongoDB learning assistant. LangGraph allows you to model agentic systems as graphs. Graphs in LangGraph have the following core features:
+
+## Graph State
+Each graph in has a state which is a shared data structure that all the nodes can access and make updates to. You can define custom attributes within the state depending on what parameters you want to track across the nodes of the graph.
+
+## Nodes
+Nodes in LangGraph are Python functions that encode the logic of your agents. They receive the current state of the graph as input, perform some computation and return an updated state.
+
+## Edges
+Edges in LangGraph are Python functions that determine which graph node to execute next based on the current state of the graph. Edges can be conditional or fixed.
+

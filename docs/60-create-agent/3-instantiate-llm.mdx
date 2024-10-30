@@ -1,0 +1,40 @@
+# 👐 Instantiate the LLM
+
+Now let's instantiate the LLM that will serve as the "brain" of our agent, and give it access to the tools we defined previously. 
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 7: Instantiate the LLM** section in the notebook to initialize the LLM for our agent and give it access to tools.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_11**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+ChatFireworks(model="accounts/fireworks/models/firefunction-v2", temperature=0.0)
+```
+</div>
+</details>
+
+**CODE_BLOCK_12**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+llm.bind_tools(tools)
+```
+</div>
+</details>
+
+**CODE_BLOCK_13**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+prompt | bind_tools
+```
+</div>
+</details>

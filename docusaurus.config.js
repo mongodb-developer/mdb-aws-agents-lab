@@ -4,14 +4,14 @@
 // Change here to customise config
 
 // Name of the Github Repo, it's also teh baseUrl
-const workshopName = 'docusaurus-workshop';
+const workshopName = 'ai-agents-lab-reinvent';
 // Change this if hosting outside mongodb-developer
 const organizationName = "mongodb-developer";
 
 // Main page config
-const title = "Docusaurus Meta Workshop";
-const tagLine = "A Workshop written in Docusaurus to teach you how to write Workshops using docusaurus";
-const startButtonTitle = "Enter Inception";
+const title = "The A to Z of Building AI Agents";
+const tagLine = "";
+const startButtonTitle = "Start Lab";
 const favicon = "img/favicon.svg"
 
 // Main Page Features
@@ -41,8 +41,8 @@ const featureList = [
 
 // UTM stuff
 
-const utmAdvocateName = `diego.freniche`;
-const utmWorkshopName = 'docusaurus_workshop'
+const utmAdvocateName = `apoorva.joshi`;
+const utmWorkshopName = 'ai_agents_lab_reinvent'
 
 const utmParams = `utm_campaign=devrel&utm_source=workshop&utm_medium=cta&utm_content=${utmWorkshopName}&utm_term=${utmAdvocateName}`;
 
@@ -54,16 +54,16 @@ const footerLinks = [
     href: `https://www.mongodb.com/try?${utmParams}`,
   },
   {
-    label: "Forums",
-    href: `https://www.mongodb.com/community/forums/${utmParams}`,
-  },
-  {
     label: "Developer Center",
     href: `https://www.mongodb.com/developer/${utmParams}`,
   },
   {
-    label: "MongoDB University",
-    href: `https://learn.mongodb.com/${utmParams}`,
+    label: "GenAI Code Examples",
+    href: `https://github.com/mongodb-developer/GenAI-Showcase`,
+  },
+  {
+    label: "GenAI Forums",
+    href: `https://www.mongodb.com/community/forums/c/generative-ai/162/${utmParams}`,
   },
   {
     href: `https://github.com/${organizationName}/${workshopName}`,

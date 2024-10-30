@@ -1,0 +1,66 @@
+# 👐 Build and execute the graph
+
+Now that we have defined the nodes and edges of the graph, let's put the graph together and execute it to ensure that our agent is working as expected. 
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 10: Build the graph** and **Step 11: Execute the graph** sections in the notebook to build and execute the graph.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_17**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+graph.add_node("agent", agent)
+```
+</div>
+</details>
+
+**CODE_BLOCK_18**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+graph.add_node("tools", tool_node)
+```
+</div>
+</details>
+
+**CODE_BLOCK_19**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+graph.add_edge(START, "agent")
+```
+</div>
+</details>
+
+**CODE_BLOCK_20**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+graph.add_edge("tools", "agent")
+```
+</div>
+</details>
+
+**CODE_BLOCK_21**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+graph.add_conditional_edges(
+    "agent",
+    route_tools,
+    {"tools": "tools", END: END},
+)
+```
+</div>
+</details>

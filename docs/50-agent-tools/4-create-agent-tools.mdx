@@ -1,0 +1,118 @@
+# 👐 Create agent tools
+
+The easiest way to define custom tools for agents in LangChain is using the `@tool` decorator. The decorator makes tools out of functions by using the function name as the tool name by default, and the function's docstring as the tool's description.
+
+We want the MongoDB learning assistant to have access to the following tools:
+
+* `get_information_for_question_answering`: Uses vector search to retrieve information to answer questions
+
+* `get_article_content_for_summarization`: Gets the content of articles for summarization
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 5: Create agent tools** section in the notebook to create tools for the agent to use.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_3**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+embedding_model.encode(text)
+```
+</div>
+</details>
+
+**CODE_BLOCK_4**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+get_embedding(user_query)
+```
+</div>
+</details>
+
+**CODE_BLOCK_5**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+[
+    {
+        "$vectorSearch": {
+            "index": VS_INDEX_NAME,
+            "path": "embedding",
+            "queryVector": query_embedding,
+            "numCandidates": 150,
+            "limit": 5,
+        }
+    },
+    {
+        "$project": {
+            "_id": 0,
+            "body": 1,
+            "score": {"$meta": "vectorSearchScore"},
+        }
+    },
+]
+```
+</div>
+</details>
+
+**CODE_BLOCK_6**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+vs_collection.aggregate(pipeline)
+```
+</div>
+</details>
+
+**CODE_BLOCK_7**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+mongodb_client[DB_NAME][FULL_COLLECTION_NAME]
+```
+</div>
+</details>
+
+**CODE_BLOCK_8**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+{"title": user_query}
+```
+</div>
+</details>
+
+**CODE_BLOCK_9**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+{"_id": 0, "body": 1}
+```
+</div>
+</details>
+
+**CODE_BLOCK_10**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+full_collection.find_one(query, projection)
+```
+</div>
+</details>

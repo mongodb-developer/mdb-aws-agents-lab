@@ -1,0 +1,40 @@
+# 👐 Define graph nodes
+
+Let's define the nodes of our graph. Our agent will have two nodes- an agent node and a tool node. 
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 8: Define graph nodes** section in the notebook to define the nodes of the graph.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_14**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+state["messages"]
+```
+</div>
+</details>
+
+**CODE_BLOCK_15**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+llm_with_tools.invoke(messages)
+```
+</div>
+</details>
+
+**CODE_BLOCK_16**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+tool.invoke(tool_call["args"])
+```
+</div>
+</details>

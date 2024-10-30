@@ -1,0 +1,31 @@
+# 📘 Concepts
+
+Here is a quick overview of concepts that you will come across in this section of the lab:
+
+## Tool calling
+
+Tool calling, interchangeably called function calling allows an LLM to use external tools such as APIs, databases, specialized machine learning models etc.
+
+In AI agents, an LLM can have access to multiple tools. Given a user query, the LLM decides which tool to invoke and the arguments for the tool call. These arguments are used to execute the tool call and the output is returned back to the LLM to inform its next steps.  
+
+The easiest way to define tools in LangChain is using the `@tool` decorator. The decorator makes tools out of functions by using the function name as the tool name by default, and the function's docstring as the tool's description. The tool call inturn consists of a tool name, arguments, and an optional identifier. 
+
+An example of a tool in LangChain is as follows:
+
+```
+@tool("search-tool", return_direct=True)
+def search(query: str) -> str:
+    """Look up things online."""
+    return "MongoDB"
+```
+An example of a tool call is as follows:
+
+```
+{
+  "name": "search-tool",
+  "args": {
+    "query": "What is MongoDB?"
+  },
+  "id": "call_H5TttXb423JfoulF1qVfPN3m"
+}
+```

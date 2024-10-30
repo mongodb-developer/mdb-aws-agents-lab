@@ -1,0 +1,24 @@
+# 📘 When to use AI agents?
+
+AI agents are best suited for complex, multi-step tasks that require integration of multiple capabilities, such as question-answering, analysis, task execution etc. to arrive at the final answer or outcome. An active area of research is to have AI agents learn from their past interactions to build personalized and adaptive experiences.
+
+
+Here are some examples of tasks/questions that **DO NOT** require an AI agent:
+
+> Who was the first president of the United States?
+
+The information required to answer this question is very likely present in the parametric knowledge of most LLMs. Hence, this question can be answer using a simple prompt to an LLM.
+
+> What is the reimbursement policy for meals for my company?  
+
+The information required to answer this question is most likely not present in the parametric knowledge of available LLMs. However, this question can easily be answered using Retrieval Augmented Generation (RAG) using a knowledge base consisting of your company's data. This still does not require an agent.
+
+Here are some use cases for AI agents:
+
+> How has the trend in the average daily calorie intake among adults changed over the last decade in the United States, and what impact might this have on obesity rates? Additionally, can you provide a graphical representation of the trend in obesity rates over this period?
+
+This question involves multiple sub-tasks such as data aggregation, visualization, and reasoning. Hence, this is a good use case for an AI agent.
+
+> Creating a personalized learning assistant that can adjust its language, examples, and methods based on the student’s responses.
+
+This is an example of a complex task which also involves user personalization. Hence, this is a good fit for an AI agent.

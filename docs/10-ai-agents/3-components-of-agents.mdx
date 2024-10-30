@@ -1,0 +1,56 @@
+# 📘 Components of AI agents
+
+AI agents have three main components: **planning and reasoning**, **memory**, and **tools**.
+
+
+## Planning and reasoning
+
+AI agents use user prompts, self-prompting and feedback loops to break down complex tasks, reason through their execution plan and refine it as needed.
+
+Some common design patterns for planning and reasoning in AI agents are as follows:
+
+### Chain of Thought (Cot) Prompting
+
+In this approach, the LLM is prompted to generate a step-by-step explanation or reasoning process for a given task or problem.
+
+Here is an example of a zero-shot CoT prompt:
+
+> Given a question, write out in a step-by-step manner your reasoning for how you will solve the problem to be sure that your conclusion is correct. Avoid simply stating the correct answer at the outset.
+
+### ReAct (Reason + Act)
+
+In this approach, the LLM is prompted to generate reasoning traces and task-specific actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans, while actions allow it to interface with external sources or tools, to gather additional information.
+
+Here is an example of a ReAct prompt:
+
+```
+Answer the following questions as best you can. You have access to the following tools:{tools}
+##
+Use the following format:
+Question: the input question you must answer
+Thought: you should always think about what to do
+Action: the action to take, should be one of [{tool_names}]
+Action Input: the input to the action
+Observation: the result of the action
+... (this Thought/Action/Action Input/Observation can repeat N times)
+Thought: I now know the final answer
+Final Answer: the final answer to the original input question
+```
+
+### Reflection
+
+Reflection involves prompting an LLM to reflect on and critique past actions, sometimes incorporating additional external information such as tool observations. The generation-reflection loop is run several times before returning the final response to the user. Reflection trades a bit of extra compute for a shot at better output quality.
+
+## Memory
+
+The memory component allows AI agents to store and recall past conversations, enabling them to learn from these interactions.
+
+There are two main types of memory for AI agents:
+
+* **Short-term memory**: Stores and retrieves information from a specific conversation.
+
+* **Long-term memory**: Stores, retrieves and updates information based on multiple conversations had over a period of time.
+
+## Tools
+
+Tools are interfaces for AI agents to interact with the external world and achieve their objectives. These can be APIs, vector databases, or even specialized machine learning models.

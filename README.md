@@ -1,49 +1,26 @@
-# Docusaurus Template Workshop
+# MongoDB AI Agents Lab @AWS re:Invent
 
-This is a template to __create new Lab documentation sites__. Contains info on how to use Docusaurus and is a good starting point.
+This is the AI Agents Lab presented by MongoDB at AWS re:Invent '24. It covers building AI Agents using MongoDB, AWS Bedrock and LangGraph.
 
-### Installation
+You can access the online version of the lab [here](https://mongodb-developer.github.io/ai-agents-lab-reinvent/).
+
+## Running the Lab Locally
+
+If you want to run the lab locally, you can start by cloning the repository or downloading the code. You will need to have [Node.js](https://nodejs.org/en/) installed.
+
+Once you have the code, you can run the following commands to install the dependencies and start the server:
 
 ```
-npx create-docusaurus@latest name-of-my-new-awesome-workshop https://github.com/mongodb-developer/docusaurus-workshop
-cd name-of-my-new-awesome-workshop
+npm install
 npm start
 ```
 
-As you don't want to get the changes of these sample pages, just delete the `.git` folder and then `git init`.
-
-Open `docusaurus.config.js` and change at least the `workshopName`
-
-### Local Development
-
-```
-$ npm start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-To test a translation use `npm run start -- --locale es` for Spanish
-
-### Build
-
-```
-$ npm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Use the provided Github Action, or deploy manually after building
+You can then access the lab at http://localhost:3000
 
 ## Contributing
 
-As `main` is protected, submit a pull request to be reviewed.
+If you find any issues with the lab, please open an issue or submit a pull request.
 
-## Docusaurus
+## License
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. It's available on https://mongodb-developer.github.io/docusaurus-workshop/.
-
-### Disclaimer
-
-Use at your own risk; not a supported MongoDB product
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details

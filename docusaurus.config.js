@@ -4,7 +4,7 @@
 // Change here to customise config
 
 // Name of the Github Repo, it's also teh baseUrl
-const workshopName = 'ai-agents-lab-reinvent';
+const workshopName = 'mdb-aws-ai-agents-lab';
 // Change this if hosting outside mongodb-developer
 const organizationName = "mongodb-developer";
 
@@ -42,7 +42,7 @@ const featureList = [
 // UTM stuff
 
 const utmAdvocateName = `apoorva.joshi`;
-const utmWorkshopName = 'ai_agents_lab_reinvent'
+const utmWorkshopName = 'mdb_aws_ai_agents_lab'
 
 const utmParams = `utm_campaign=devrel&utm_source=workshop&utm_medium=cta&utm_content=${utmWorkshopName}&utm_term=${utmAdvocateName}`;
 

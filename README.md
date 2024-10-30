@@ -1,8 +1,8 @@
-# MongoDB AI Agents Lab @AWS re:Invent
+# MongoDB x AWS AI Agents Lab
 
-This is the AI Agents Lab presented by MongoDB at AWS re:Invent '24. It covers building AI Agents using MongoDB, AWS Bedrock and LangGraph.
+In this lab, you will learn how to build AI Agents using MongoDB, AWS Bedrock and LangGraph.
 
-You can access the online version of the lab [here](https://mongodb-developer.github.io/ai-agents-lab-reinvent/).
+You can access the online version of the lab [here](https://mongodb-developer.github.io/mdb-aws-ai-agents-lab/).
 
 ## Running the Lab Locally
 

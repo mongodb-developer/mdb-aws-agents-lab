@@ -1,0 +1,8 @@
+{
+  "label": "AWS",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Enable Bedrock models and set up dev environment in Sagemaker Studio."
+  }
+}

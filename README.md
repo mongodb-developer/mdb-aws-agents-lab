@@ -2,7 +2,7 @@
 
 In this lab, you will learn how to build AI Agents using MongoDB, AWS Bedrock and LangGraph.
 
-You can access the online version of the lab [here](https://mongodb-developer.github.io/mdb-aws-ai-agents-lab/).
+You can access the online version of the lab [here](https://mongodb-developer.github.io/mdb-aws-agents-lab/).
 
 ## Running the Lab Locally
 

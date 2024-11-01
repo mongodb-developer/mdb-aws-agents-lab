@@ -4,7 +4,7 @@
 // Change here to customise config
 
 // Name of the Github Repo, it's also teh baseUrl
-const workshopName = 'mdb-aws-ai-agents-lab';
+const workshopName = 'mdb-aws-agents-lab';
 // Change this if hosting outside mongodb-developer
 const organizationName = "mongodb-developer";
 

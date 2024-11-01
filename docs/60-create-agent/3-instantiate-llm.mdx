@@ -12,7 +12,10 @@ The answers for code blocks in this section are as follows:
 <summary>Answer</summary>
 <div>
 ```python
-ChatFireworks(model="accounts/fireworks/models/firefunction-v2", temperature=0.0)
+ChatBedrock(
+    model_id="anthropic.claude-3-sonnet-20240229-v1:0",
+    model_kwargs=dict(temperature=0)
+)
 ```
 </div>
 </details>

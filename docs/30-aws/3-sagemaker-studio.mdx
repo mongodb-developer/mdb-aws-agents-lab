@@ -1,0 +1,35 @@
+import Screenshot from "@site/src/components/Screenshot";
+
+# 👐 Setup dev environment in Sagemaker Studio
+
+You will be using a Jupyter Notebook in Sagemaker Studio as the dev environment for the rest of the lab.
+
+Start by navigating to Amazon Sagemaker from the AWS Console.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/1-nav-sagemaker.png" alt="Navigate to Sagemaker" />
+
+In the sidebar, click on **Domains** under **Admin configurations** and select the pre-configured domain.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/2-select-domain.png" alt="Select domain" />
+
+Under Domain Details, click on **Space management**.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/3-space-management.png" alt="Space management" />
+
+You should see a pre-configured space appear. Click **Launch Studio** to launch a Sagemaker Studio environment in this space. 
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/4-launch-studio.png" alt="Launch studio" />
+
+In the Sagemaker Studio console, select the **Git** dropdown from the menu bar at the top and then select **Clone Git Repository**
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/5-clone-repo-dropdown.png" alt="Clone Git Repository dropdown" />
+
+In the modal that appears, paste this URL in the **Git repository URL** box, uncheck **Open README files.**, and click Clone: https://github.com/mongodb-developer/mdb-aws-agents-lab-notebooks/
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/6-clone-repo.png" alt="Cloning the repo" />
+
+Once the repo is cloned, you will see the content of the repo in the sidebar. **Double-click** on the file named **notebook_template.ipynb**. This is where you will fill in code for the rest of the lab.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2" src="img/screenshots/30-aws/3-sagemaker-studio/7-open-template.png" alt="Opening the notebook template" />
+
+That's it! You are ready to start building your AI agent!

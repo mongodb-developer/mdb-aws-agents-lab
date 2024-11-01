@@ -1,0 +1,29 @@
+import Screenshot from "@site/src/components/Screenshot";
+
+# 👐 Request access to LLMs in Bedrock 
+
+In this lab, we will use chat completion LLMs available on Amazon Bedrock. 
+
+To do this, from the AWS console, navigate to Amazon Bedrock.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2" src="img/screenshots/30-aws/2-bedrock/1-nav-bedrock.png" alt="Navigate to Bedrock" />
+
+On the Bedrock homepage, click **Get Started**
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2" src="img/screenshots/30-aws/2-bedrock/2-get-started.png" alt="Get started with Bedrock" />
+
+In the Bedrock console, scroll down to **Bedrock configurations** in the sidebar and click **Model access**
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2" src="img/screenshots/30-aws/2-bedrock/3-model-access.png" alt="Get model access" />
+
+Under **Base models**, click on **Available to request** against the _Claude 3 Sonnet_ model. In the modal that appears, click **Request model access**.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2" src="img/screenshots/30-aws/2-bedrock/4-enable-model.png" alt="Enable model" />
+
+Scroll to the bottom of the page and click **Next**. On the following page, click **Submit** to submit the model access request. 
+
+It takes a few seconds to provision access. Once access has been granted you should see **Access granted** against the model name.
+
+<Screenshot url="https://us-west-2.console.aws.amazon.com/bedrock/home?region=us-west-2" src="img/screenshots/30-aws/2-bedrock/5-access-granted.png" alt="Access granted" />
+
+That's it! You are now ready to use the _Claude Sonnet 3_ model to build an AI agent.

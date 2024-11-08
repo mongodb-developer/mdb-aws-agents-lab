@@ -1,7 +1,10 @@
 # 📘 Components of AI agents
 
-AI agents have three main components: **planning and reasoning**, **memory**, and **tools**.
+AI agents have four main components: **perception**, **planning and reasoning**, **tools**, and **memory**.
 
+## Perception
+
+Perception, in the context of AI agents, is the mechanism by which the agent gathers information about its environment. Text inputs are currently the most common perception mechanism for AI agents, but we are slowly progressing towards audio, visual, multimodal or even physical sensory inputs.
 
 ## Planning and reasoning
 
@@ -41,6 +44,10 @@ Final Answer: the final answer to the original input question
 
 Reflection involves prompting an LLM to reflect on and critique past actions, sometimes incorporating additional external information such as tool observations. The generation-reflection loop is run several times before returning the final response to the user. Reflection trades a bit of extra compute for a shot at better output quality.
 
+## Tools
+
+Tools are interfaces for AI agents to interact with the external world in order to achieve their objectives. These can be APIs, vector databases, or even specialized machine learning models.
+
 ## Memory
 
 The memory component allows AI agents to store and recall past conversations, enabling them to learn from these interactions.
@@ -50,7 +57,3 @@ There are two main types of memory for AI agents:
 * **Short-term memory**: Stores and retrieves information from a specific conversation.
 
 * **Long-term memory**: Stores, retrieves and updates information based on multiple conversations had over a period of time.
-
-## Tools
-
-Tools are interfaces for AI agents to interact with the external world and achieve their objectives. These can be APIs, vector databases, or even specialized machine learning models.

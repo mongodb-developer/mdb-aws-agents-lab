@@ -97,10 +97,6 @@ const config = {
   favicon: `${favicon}`,
   deploymentBranch: "gh-pages",
   staticDirectories: ["static"],
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "es"],
-  },
   customFields: {
     startButtonTitle: `${startButtonTitle}`,
     featureList: featureList,

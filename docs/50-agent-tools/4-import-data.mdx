@@ -1,0 +1,20 @@
+import Link from "@site/src/components/Link";
+import Screenshot from "@site/src/components/Screenshot";
+
+# 👐 Import data
+
+The MongoDB learning assistant has two tools- a vector search tool to retrieve information to answer questions about MongoDB, and another tool to get the content of articles in our Developer Center for summarization.
+
+Let's import the data required by these tools into two MongoDB collections. This is as simple as making a `GET` request to a serverless AWS Lambda function that we have created for you.
+
+Run the cells under the **Step 3: Import data** section in the notebook to import the data required by our agent's tools, into MongoDB collections.
+
+To verify that the data has been imported into your MongoDB cluster, navigate to the **Overview** page in the Atlas UI. In the **Clusters section**, select the cluster you just created and click **Browse collections**.
+
+<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/50-agent-tools/4-import-data/1-browse-collections.png" alt="Browse collections" />
+
+Ensure that you see a database called _mongodb_agents_lab_, and two collections namely _chunked_articles_ and _full_articles_ under it. Note the number and format of documents in both the collections.
+
+<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/50-agent-tools/4-import-data/2-chunked-collection.png" alt="Chunked collection" />
+
+<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/50-agent-tools/4-import-data/3-full-collection.png" alt="Full collection" />

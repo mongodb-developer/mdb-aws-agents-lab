@@ -1,3 +1,6 @@
+import Link from "@site/src/components/Link";
+import Screenshot from "@site/src/components/Screenshot";
+
 # 👐 Create a vector search index
 
 To retrieve documents using vector search, you must configure a vector search index on the collection you want to perform vector search against.
@@ -27,3 +30,11 @@ vs_collection.create_search_index(model=model)
 ```
 </div>
 </details>
+
+To verify that the index was created, navigate to **Search Indexes** for the _chunked_articles_ collection.
+
+<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/50-agent-tools/5-create-vector-search-index/1-nav-search-indexes.png" alt="Navigate to search indexes" />
+
+The index is ready to use once the status changes from **PENDING** to **READY**.
+
+<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/50-agent-tools/5-create-vector-search-index/2-index-ready.png" alt="Index ready to use" />

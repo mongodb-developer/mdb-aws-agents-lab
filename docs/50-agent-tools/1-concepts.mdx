@@ -2,6 +2,20 @@
 
 Here is a quick overview of concepts that you will come across in this section of the lab:
 
+## About the data
+
+In this lab, we are using a serverless AWS Lambda function to import the data required by the agent's tools, into MongoDB. If you want to do this on your own, these datasets are available on Hugging Face:
+
+* [devcenter-articles](https://huggingface.co/datasets/MongoDB/devcenter-articles): Markdown versions of 20 articles from our Developer Center. This dataset is imported into a collection called `full_articles`. 
+
+* [devcenter-articles-embedded](https://huggingface.co/datasets/MongoDB/devcenter-articles-embedded): Chunked and embedded versions of the articles in the `devcenter-articles` dataset. This dataset is imported into a collection called `chunked_articles`.
+
+To learn more about chunking and embedding, here are some resources from our Developer Center:
+
+* [How to Choose the Right Chunking Strategy for Your LLM Application](https://www.mongodb.com/developer/products/atlas/choosing-chunking-strategy-rag/?utm_campaign=devrel&utm_medium=ai-agents-devday-workshop&utm_term=apoorva.joshi)
+* [How to Choose the Best Embedding Model for Your LLM Application](https://www.mongodb.com/developer/products/atlas/choose-embedding-model-rag/?utm_campaign=devrel&utm_medium=ai-agents-devday-workshop&utm_term=apoorva.joshi)
+
+
 ## Tool calling
 
 Tool calling, interchangeably called function calling allows an LLM to use external tools such as APIs, databases, specialized machine learning models etc.

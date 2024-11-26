@@ -64,3 +64,7 @@ graph.add_conditional_edges(
 ```
 </div>
 </details>
+
+:::caution
+Upon executing the graph, if you see the agent get stuck in an infinite tool-calling loop, play around with the prompt in Step 7 and run the cells that follow until you initialize the `llm_with_tools` variable. If this doesn't work, consider this a lesson in working with non-deterministic ML models. 🙂
+:::
